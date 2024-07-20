@@ -1,0 +1,187 @@
+header{
+    background-color: rgb(250, 220, 250);
+}
+body{
+    background-color: rgb(250, 220, 250);
+}
+footer{
+    background-color: cornsilk;
+    text-align: left;
+    color: rgb(5, 5, 1);
+    padding: 10px;
+}
+h1{
+    text-align: center;
+    color: rgb(5, 5, 1);
+}
+h5{
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 200px;
+    font-size: 30px;
+}
+h6{
+    color: black;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 50px;
+}
+h8{
+    color: black;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 300px;
+    margin-left: 480px;
+}
+.Bar ul{
+    list-style-type: none;
+    background-color: cornsilk;
+    padding: 0px;
+    overflow: hidden;
+    text-align: center;
+    align-items: center;
+}
+.Bar a{
+    color: black;
+    text-decoration: none;
+    padding:15px;
+    display: block;
+    text-align: center;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 5px;
+    align-items: center;
+
+  }
+.Bar a:hover{
+    background-color: rgb(193, 192, 191);
+    
+}
+.Bar li{
+    float: left;
+}
+h5{
+    margin-right: 10px;
+    font-size: 20px;
+}
+.introduction{
+    font-size: 10px;
+    text-align: justify;
+}
+.Hobbys{
+    font-size: 10px;
+    text-align: justify;
+    text-align: left;
+}
+.future-img{
+    flex: 33.33%;
+    padding: 5px;
+    margin-left: 180px;
+    margin-top: 20px;
+}
+.play-btn{
+    width: 60px;
+    position: absolute;
+    left: 33%;
+    top: 86%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+}
+.play-btn2{
+    width: 60px;
+    position: absolute;
+    left: 66%;
+    top: 86%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+}
+.Contact-info{
+    text-align: center;
+}
+.video-player{
+    width: 80%;
+    position: absolute;
+    margin-left: 210px;
+    top: 120%;
+}
+video:focus{
+    outline: none;
+}
+.container{
+    margin-bottom: 800px;
+}
+.close-btn{
+    position: absolute;
+    width: 5%;
+    height: 10%;
+    right: 20%;
+}
+.video-player2{
+    width: 80%;
+    position: absolute;
+    margin-left: 310px;
+    top: 120%;
+}
+.close-btn2{
+    position: absolute;
+    width: 4%;
+    height: 10%;
+    right: 42%;
+}
+.FormaForma{
+    
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    
+}
+.Forma{
+    width: 50%;
+    margin: auto;
+    overflow: hidden;
+    padding: 40px;
+    background: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+    border-radius: 8px;
+}
+h9{
+    text-align: center;
+    color: #333;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input, textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+
+
+button {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}

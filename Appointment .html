@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<head>
+    <header>
+        <title>
+            Service Appointment Request
+        </title>
+        <link rel="stylesheet" type="text/css" href="./style.css">
+        <h1>Handyman in Winnipeg, Manitoba? Ask MrKenn's!</h1>
+        <nav class="Bar">
+            <ul>
+                <li><a href="kennymenu.html">Home</a></li>
+                <li><a href="aboutme.html">About me</a></li>
+                <li><a href="skills.html">Videos</a></li>
+                <li><a href="test.html">Pictures</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="Appointment .html">Appointment</a></li>
+              </ul>
+        </nav>
+           
+        </header>
+</head>
+
+<body class="FormaForma">
+    <div class="Forma">
+        <h9>Service Appointment Request</h9>
+        <form id="appointmentForm">
+            <label for="name">Name and Surname:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="telephone">Telephone Number:</label>
+            <input type="tel" id="telephone" name="telephone" required>
+
+            <label for="service">Service Name:</label>
+            <input type="text" id="service" name="service" required>
+
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" required></textarea>
+
+            <label for="date">Date and Time:</label>
+            <input type="datetime-local" id="date" name="date" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="address">Address of Request:</label>
+            <input type="text" id="address" name="address" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script>
+    document.getElementById('appointmentForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const name = document.getElementById('name').value;
+    const telephone = document.getElementById('telephone').value;
+    const service = document.getElementById('service').value;
+    const description = document.getElementById('description').value;
+    const date = document.getElementById('date').value;
+    const email = document.getElementById('email').value;
+    const address = document.getElementById('address').value;
+
+    const formData = {
+        name: name,
+        telephone: telephone,
+        service: service,
+        description: description,
+        date: date,
+        email: email,
+        address: address
+    };
+
+    sendEmail(formData);
+});
+
+function sendEmail(formData) {
+    const emailBody = `
+        Name and Surname: ${formData.name}
+        Telephone Number: ${formData.telephone}
+        Service Name: ${formData.service}
+        Description: ${formData.description}
+        Date and Time: ${formData.date}
+        E-mail: ${formData.email}
+        Address of Request: ${formData.address}
+    `;
+
+    const mailtoLink = `mailto:omarerinfolami@gmail.com?subject=Service Appointment Request&body=${encodeURIComponent(emailBody)}`;
+    window.location.href = "omarerinfolami@gmail.com";
+    
+    </script>
+</body>
+
+<head>
+    <footer>
+        <div class="Contact-info">
+        <p>2024 MrKenn's Handyman. All rights reserved.</p>
+        <a href="https://www.facebook.com/profile.php?id=100005194787222">Facebook</a>
+        <p>Email: Umehk4@gmail.com</p>
+        <p>For Appontiment call telephone number: +1 (437) 661-0962</p>
+        </div>
+        
+    </footer>
+</head>
+
+
+
+</html>

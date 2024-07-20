@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <header>
+        <title>
+            Website title
+        </title>
+        <link rel="stylesheet" type="text/css" href="./style.css">
+        <h1>Handyman in Winnipeg, Manitoba? Ask MrKenn's!</h1>
+        <nav class="Bar">
+            <ul>
+                <li><a href="kennymenu.html">Home</a></li>
+                <li><a href="aboutme.html">About me</a></li>
+                <li><a href="skills.html">Videos</a></li>
+                <li><a href="test.html">Pictures</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="Appointment .html">Appointment</a></li>
+                
+              </ul>
+        </nav>
+           
+        </header>
+</head>
+
+
+    <body>
+        <h8>Picture Gallery</h8>
+        <style>
+
+            /* The grid: Four equal columns that floats next to each other */
+            .column {
+                float: left;
+                width: 5%;
+                padding: 5px;
+                margin-left: 250px;
+                margin-top: 50px;
+            }
+            
+            /* Style the images inside the grid */
+            .column img {
+              opacity: 0.8; 
+              cursor: pointer; 
+            }
+            
+            .column img:hover {
+              opacity: 0.5;
+            }
+            
+            /* Clear floats after the columns */
+            .row:after {
+              content: "";
+              display: table;
+              clear: both;
+            }
+            
+            /* The expanding image container */
+            .container2 {
+              position: relative;
+              display: none;
+              width: 30%;
+              margin-left: 400px;
+    
+            }
+            
+            /* Closable button inside the expanded image */
+            .closebtn {
+              position: absolute;
+              top: 10px;
+              right: 15px;
+              color: white;
+              font-size: 35px;
+              cursor: pointer;
+            }
+            </style>
+        
+            <!-- The four columns -->
+        <div class="row">
+            <div class="column">
+              <img src="stol1.jpeg" style="width:100%" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+              <img src="stol2.jpeg" style="width:100%" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+              <img src="stol3.jpeg" style="width:100%" onclick="myFunction(this);">
+            </div>
+          </div>
+          
+          <div class="container2">
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+            <img id="expandedImg" style="width:100%">
+            <div id="imgtext"></div>
+          </div>
+        
+          <script>
+            function myFunction(imgs) {
+              var expandImg = document.getElementById("expandedImg");
+              var imgText = document.getElementById("imgtext");
+              expandImg.src = imgs.src;
+              imgText.innerHTML = imgs.alt;
+              expandImg.parentElement.style.display = "block";
+            }
+            </script>
+    </body>
+
+
+<head>
+    <footer>
+        <p>2024 MrKenn's Handyman. All rights reserved.</p>
+        <a href="https://www.facebook.com/profile.php?id=100005194787222">Facebook</a>
+        <p>Email: Umehk4@gmail.com</p>
+        <p>Telephone number: +1 (437) 661-0962</p>
+    </footer>
+</head>
+
+
+
+</html>

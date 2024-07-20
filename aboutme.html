@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <header>
+        <title>
+            Website title
+        </title>
+        <link rel="stylesheet" type="text/css" href="./style.css">
+        <h1>Handyman in Winnipeg, Manitoba? Ask MrKenn's!</h1>
+        <nav class="Bar">
+            <ul>
+              <li><a href="kennymenu.html">Home</a></li>
+              <li><a href="aboutme.html">About me</a></li>
+              <li><a href="skills.html">Videos</a></li>
+              <li><a href="test.html">Pictures</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="Appointment .html">Appointment</a></li>
+              </ul>
+        </nav>
+           
+        </header>
+</head>
+
+<body>
+    <img src="face.jpg" style="height:400px; margin:100px; float: left;" alt="Profile">
+    <div class="introduction" style="height:400px; margin:100px;">
+        <h5>Hello</h5>
+        <p style="line-height: 2.0; font-size:17px;">My name is Kennet Zakharian, I am 23 years old, I am Ukrainian of Nigerian origin. I have spent the last 8 years in Poland. 
+        During this time I worked in various industries, from construction, installing doors in apartment blocks, to the construction of my own tables and custom-made buildings. 
+        I like to develop myself in industrial and construction fields, it is my hobby. 
+        In the future, I dream of building a large construction company here in Canada and in my home country of Nigeria.</p>
+    </div>
+</body>
+
+<body>
+    <h5>Hobbys</h5>
+    <div class="slides">
+        <style>         
+            /* Next & previous buttons */
+            .prev, .next {
+              cursor: pointer;
+              position:absolute;
+              top: 200%;
+              width: auto;
+              padding: 10px;
+              margin-top: -22px;
+              color: black;
+              font-weight: bold;
+              font-size: 20px;
+              transition: 0.6s ease;
+              border-radius: 0 3px 3px 0;
+              user-select: none;
+            }
+            
+            /* Position the "next button" to the right */
+            .next {
+              right: 0;
+              margin-right: 550px;
+            }
+            .prev{
+                left: 0;
+                margin-left: 550px;
+            }
+            
+            /* On hover, add a black background color with a little bit see-through */
+            .prev:hover, .next:hover {
+              background-color: rgba(0,0,0,0.8);
+            }
+                                                
+            .active, .dot:hover {
+              background-color: #717171;
+            }
+            
+            /* Fading animation */
+            .fade {
+              animation-name: fade;
+              animation-duration: 1.5s;
+            }
+            
+            @keyframes fade {
+              from {opacity: .4} 
+              to {opacity: 1}
+            }
+            
+            /* On smaller screens, decrease text size */
+            @media only screen and (max-width: 300px) {
+              .prev, .next,.text {font-size: 11px}
+            }
+            </style>
+        <div class="mySlides fade">
+            
+            <img src="kenny1.jpg" style="width:600px; height: 400px; float: left; margin-left: 290px;" >
+          </div>      
+          <div class="mySlides fade">
+            <img src="kenny2.jpg" style="width:700px; height: 400px; float: left; margin-left: 250px;">
+          </div>
+        
+          <div class="mySlides fade">
+            <img src="kenny3.jpg" style="width:600px; height: 400px; float: left; margin-left: 300px;">
+          </div>
+    
+          <div class="mySlides fade">
+            <img src="kenny5.jpg" style="width:400px; height: 400px; float: left; margin-left: 400px;">
+          </div>
+        <div><!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slides[slideIndex-1].style.display = "block";  
+            }
+            </script>
+            
+        <div class="hobby" style="height:600px; margin:100px; float:left;" alt="text">
+            <p style="line-height: 2.0; font-size:18px;">Since I attended primary school, I have been involved in various sports activities, mainly football and athletics. 
+            I trained professionally athletics in Ukraine. I continued my adventure with this sport, when in 2014, I moved to Poland. 
+            I have been awarded many times for my results.</p>
+        </div>
+    </div>
+   
+</body>
+
+
+<head>
+    <footer class="foot">
+      <p>2024 MrKenn's Handyman. All rights reserved.</p>
+      <a href="https://www.facebook.com/profile.php?id=100005194787222">Facebook</a>
+      <p>Email: Umehk4@gmail.com</p>
+      <p>For Appontiment call telephone number: +1 (437) 661-0962</p>      
+    </footer>
+</head>
+
+</html>
